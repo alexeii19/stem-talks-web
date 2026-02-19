@@ -17,10 +17,10 @@ import { CommonModule } from '@angular/common';
     </div>
     <div class="column text-column">
       <p>
-        El 30 y 31 de enero nos volvemos a ver en el Centre Bit Menorca para celebrar el STEM Talks Menorca. Un evento relacionado con el mundo STEM (Science, Technology, Engineering, Mathematics) con el objetivo de la divulgación científico-técnica y que se encuentra en su 8a edición. siete ediciones dedicadas a unas jornadas con la ciencia y la tecnología como protagonista preceden la de este año donde nos podremos volver a juntar en comunidad. Un evento de dos días, 30 y 31 de enero, donde volveremos a vernos y disfrutaremos de conferencias de grandes profesionales en la tecnología y la ciencia dirigidas a cualquier interesado en la materia con un objetivo claro: aprender en comunidad.
+        El 20 y 21 de marzo nos volvemos a ver en la sala d'audiències del Claustre del Carme en Maó para celebrar el STEM Talks Menorca. Un evento relacionado con el mundo STEM (Science, Technology, Engineering, Mathematics) con el objetivo de la divulgación científico-técnica y que se encuentra en su 9a edición. ocho ediciones dedicadas a unas jornadas con la ciencia y la tecnología como protagonista preceden la de este año donde nos podremos volver a juntar en comunidad. Un evento de dos días, 20 y 21 de marzo, donde volveremos a vernos y disfrutaremos de conferencias y talleres de grandes profesionales en la tecnología y la ciencia dirigidas a cualquier interesado en la materia con un objetivo claro: aprender en comunidad.
       </p>
       <p>
-        STEM Talks Menorca es un evento totalmente gratuito e inclusivo que te acercará a cuestiones actuales de la tecnología dadas por grandes exponentes que vienen de diferentes puntos de España y que son expertos en sus campos. Temas como inteligencia artificial, computación cuántica, realidad virtual, biociencias... Diferentes ponentes de instituciones tanto públicas como privadas nos llevarán un evento de calidad que se podrá disfrutar en versión híbrida tanto en directo desde youtube como presencial desde el Centre Bit Menorca.
+        STEM Talks Menorca es un evento totalmente gratuito e inclusivo que te acercará a cuestiones actuales de la tecnología dadas por grandes exponentes que vienen de diferentes puntos de España y que son expertos en sus campos. Temas como inteligencia artificial, blockchain, realidad virtual, física, biociencias... Diferentes ponentes de instituciones tanto públicas como privadas nos ofrecerán un evento de calidad que se podrá disfrutar presencialmente desde Maó, en la sala d'audiències.
       </p>
     </div>
   </div>
@@ -35,7 +35,7 @@ import { CommonModule } from '@angular/common';
 
 export class HomeComponent implements OnInit {
   // Set the event date and time
-  targetDate: Date = new Date('2025-01-30T17:00:00'); // Change to your event date
+  targetDate: Date = new Date('2026-03-20T09:00:00'); // Change to your event date
 
   // Countdown variables
   days: number = 0;

@@ -8,8 +8,8 @@ import { MapComponent } from './map/map.component';
 import { GdgComponent } from './gdg/gdg.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FaqComponent } from './faq/faq.component';
-import { ContactComponent } from './contact/contact.component';  
-import { FooterComponent } from './footer/footer.component';  
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   template: `
     <app-nav-bar></app-nav-bar>
     <div class="fullscreen" id="home">
-      <h1 class="typing-text">{{ displayText }} Talks Menorca 2025</h1>
+      <h1 class="typing-text">{{ displayText }} Talks Menorca 2026</h1>
       <!-- Event details with fade-in effect -->
       <div *ngIf="showEventDetails" class="event-details">
         <p>30 y 31 de Enero</p>
@@ -506,7 +506,7 @@ import { FooterComponent } from './footer/footer.component';
     </div>
     <app-home id="about"></app-home>
     <app-speakers id="speakers"></app-speakers>
-    <app-schedule id="schedule"></app-schedule>
+    <!-- <app-schedule id="schedule"></app-schedule> -->
     <app-map id="map"></app-map>
     <app-gdg id="gdg"></app-gdg>
     <app-sponsors id="sponsors"></app-sponsors>
@@ -528,7 +528,7 @@ export class AppComponent implements OnInit {
   isCompleted = false;
   showEventDetails = false;
 
-  constructor(private ngZone: NgZone) {}
+  constructor(private ngZone: NgZone) { }
 
 
   ngOnInit() {

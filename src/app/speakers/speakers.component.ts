@@ -11,64 +11,47 @@ import { CommonModule } from '@angular/common';
 
 export class SpeakersComponent {
   speakers = [
-    { 
-      name: 'Maria Teresa Nieto (Maritere)', 
-      position: 'Developer Relations Manager @ Telefonica', 
-      image:  'assets/speakers-2025/maritere.jpeg',
-      bio: "Maritere es ingeniera informática y cuenta con más de ocho años de experiencia en el campo de la tecnología. Actualmente trabaja como Developer Relations Manager en Telefónica. Durante 2020, Maritere formó parte del Technical Steering Committee de Hyperledger, uno de los consorcios empresariales de blockchain más importantes del ecosistema. Desde 2017, compagina su trabajo principal con la docencia en tecnología blockchain en universidades españolas. María Teresa también está comprometida con la visibilidad de las mujeres en el mundo STEM. Lidera la organización de Women Techmakers Madrid, una comunidad local de una iniciativa de Google. En 2022, fue reconocida por Mujer Hoy en Next Generation, como una mujer para liderar en tecnología." 
+    {
+      name: 'Maria Teresa Nieto (Maritere)',
+      position: 'Líder de estrategia de producto en Telefónica Tech',
+      image: 'assets/speakers-2025/maritere.jpeg',
+      bio: "Maritere es ingeniera informática y cuenta con más de ocho años de experiencia en el campo de la tecnología. Actualmente trabaja como Developer Relations Manager en Telefónica. Durante 2020, Maritere formó parte del Technical Steering Committee de Hyperledger, uno de los consorcios empresariales de blockchain más importantes del ecosistema. Desde 2017, compagina su trabajo principal con la docencia en tecnología blockchain en universidades españolas. María Teresa también está comprometida con la visibilidad de las mujeres en el mundo STEM. Lidera la organización de Women Techmakers Madrid, una comunidad local de una iniciativa de Google. En 2022, fue reconocida por Mujer Hoy en Next Generation, como una mujer para liderar en tecnología."
     },
-    { 
-      name: 'Ana Freire', 
-      position: 'Ingeniera y Doctora en Informática. Vicedecana en la UPF Barcelona School of Management', 
-      image: 'assets/speakers-2025/freire.jpg',
-      bio: "Ana Freire, ingeniera y doctora Cum Laude en Informática, es Vicedecana de Impacto Social e Innovación Académica en la UPF Barcelona School of Management (Universitat Pompeu Fabra). Es también miembro del Consejo de Administración de Renfe y asesora en instituciones públicas y privadas. Su experiencia abarca Inteligencia Artificial, Recuperación de Información y Análisis de Redes Sociales. Ha trabajado en prestigiosas instituciones como Yahoo Labs, la Universidad de Glasgow y el Consejo Nacional de Investigaciones de Italia. Ana ha contribuido con más de 50 publicaciones científicas, posee varias patentes y ha sido galardonada con numerosos premios tanto a nivel nacional como internacional. Business Insider la reconoció como una de las 23 españolas más destacadas que lideran la revolución tecnológica. También ha sido distinguida con el Premio al Talento Joven en Ciencia Femenino de la Real Academia de Ciencias de España, así como con el Premio Ada Byron Junior de la Universidad de Deusto. Desde 2016, Ana lidera STOP, un proyecto multidisciplinar centrado en abordar problemas de salud mental a través del análisis de redes sociales, reflejando su compromiso con el uso de la ciencia de datos para el bienestar social. Su pasión por la ciencia y la tecnología también se refleja en sus ponencias públicas, incluidas una charla TEDx en la que explora la relación entre la tecnología y la salud mental."
-     },
-    { 
-      name: 'Jorge del Casar', 
-      position: 'Head of Tech en ActioGlobal', 
-      image: 'assets/speakers-2025/jorge.jpeg',
-      bio: "Llevo años liderando equipos de desarrollo de software y trabajando como consultor tecnológico para grandes compañías. Google ha reconocido mi aporte a la comunidad tecnológica otorgándome los galardones de Google Developer Expert (#GDE) en Web Technologies y Assistant (#AoGdevs)"
-     },
-    { 
-      name: 'Cristina Maria Pereira dos Santos', 
-      position: 'Professora Titular i Vicedegana d’Afers Acadèmics i de Qualitat de la Facultat de Biociències', 
-      image: 'assets/speakers-2025/cristina.png',
-      bio: "Soc Biòloga per la Universitat de Coimbra i doctora en Antropologia Biològica per la Universitat Autònoma de Barcelona amb especialització en Genètica de poblacions humanes i evolució molecular. Actualment sóc Professora Titular de la Unitat d’Antropologia Biològica de la Universitat Autònoma de Barcelona i Vicedegana d’Afers Acadèmics i de Qualitat de la Facultat de Biociències. Fins fa menys d’un any he estat Coordinadora del Grau en Biologia de la Universitat Autònoma de Barcelona i també he coordinat el màster interuniversitari (UAB/UB) d’Antropologia Biològica." 
+    {
+      name: 'Albert Quintana',
+      position: 'Vicedecano de Calidad y Plan Estratégico en la facultat de biociències de la Universitat Autònoma de Barcelona',
+      image: 'assets/speakers-2026/albert.jpeg',
+      bio: "Vicedecano de Calidad y Plan Estratégico en la facultad de biociencias de la Universidad Autónoma de Barcelona. También es Profesor agregado del Departamento de Biología Celular, Fisiología e Inmunología y miembro del Instituto de Neurociencias de la Universidad Autónoma de Barcelona."
     },
-    { name: 'Gabriel Moyà Alcover',
-      position: 'professor de la UIB de la Unitat de Gràfics i Visió en el Departament de Matemàtiques i Informàtica', 
-      image: 'assets/speakers-2025/biel.jpg',
-      bio: "Som en Gabriel Moyà Alcover, professor de la UIB de la Unitat de Gràfics i Visió en el Departament de Matemàtiques i Informàtica i un amic del llenguatge Python de fa més de 12 anys. A més de la meva tasca docent en assignatures com Programació I, Intel·ligència Artificial i Aprenentatge Automàtic, faig algunes feines de recerca emprant la IA per tasques d’anàlisi d’imatges sobretot en l’àmbit mèdic, darrerament també estic ajudant a la recerca en Intel·ligència Artificial eXplicable i estic participant en projectes de transferència de coneixement cap a la societat"
+    {
+      name: 'Yolanda Gonzalez',
+      position: 'Profesora titular en la Universitat de les Illes Balears',
+      image: 'assets/speakers-2026/yolanda.jpg',
+      bio: "Doctora en Ingeniería Industrial y profesora titular de universidad del área de Arquitectura y Tecnología de Computadores en el Departamento de Ciencias Matemáticas e Informática en la Universidad de las Islas Baleares. También fue la directora de la Escuela Politécnica Superior de la Universidad de las Islas Baleares entre 2012 y 2016."
     },
-    { 
-      name: 'Ernest Teniente', 
-      position: 'Director inLab FIB', 
-      image: 'assets/speakers-2025/ernest.jpg',
-      bio: "L'Ernest Teniente és Catedràtic del Departament d'Enginyeria de Serveis i Sistemes d'Informació (ESSI) de la Universitat Politècnica de Catalunya (UPC). Actualment, és el Director de l'inLab FIB (el laboratori d'innovació i recerca de la Facultat d'Informàtica de Barcelona), President de SISTEDES (Sociedad española de Ingeniería del Software y Tecnologías de Desarrollo de Software) i membre de la Junta Directiva de la SCIE (Sociedad Científica Informática de España). També va ser investigador visitant al Politecnico di Milano i a la Universitá di Roma Tre, a Itàlia."
+    {
+      name: 'Rubén Sierra',
+      position: 'Creador de Fisicomic y creador de contenido en 20minutos',
+      image: 'assets/speakers-2026/ruben.jpeg',
+      bio: "Graduado en Física e Ingeniería Electrónica con un máster en Ciencia y Tecnología Espacial, es el creador de Fisicomic y cofundador de Garuna Effect, asociación de divulgación científica. Galardonado con el XVI Premio Creadores 20minutos, actualmente escribe sobre la ciencia del mundo friki en el mismo periódico, una labor que combina su pasión por el dibujo de cómics con la docencia, la gestión de eventos y la narración de pro-wrestling."
     },
-    { 
-      name: 'Nerea Luis', 
-      position: 'Cofundadora de @wearlumilabs y doctora en Inteligencia Artificial', 
-      image: 'assets/speakers-2025/nerea.jpg',
-      bio: "Nerea Luis es consultora y asesora freelance en Inteligencia Artificial. Recientemente ha cofundado Lumi Labs, donde pretende acercar la IA a las organizaciones de una forma cercana, realista y segura. De formación Doctora en Ciencias de la Computación, con 10 años de experiencia en el campo, ha liderado la dirección de proyectos relacionados con Procesamiento del Lenguaje Natural y Visión Artificial. En su última etapa, en Sngular, llegó a ser la directora del equipo de Inteligencia Artificial. Durante estos años ha recibido reconocimientos de Google, Casa Real o Forbes, entre otros. Nerea es una conocida divulgadora en el campo de la Inteligencia Artificial, lleva tres temporadas colaborando con el programa de TV Órbita Laika en la nueva sección de tecnología y recientemente en Cuerpos Especiales en EuropaFM. También es habitual speaker en conferencias e imparte docencia y formación en diferentes escuelas técnicas y de negocio."
+    {
+      name: 'Irene Ruiz Soto',
+      position: 'Business development y analista y científica de datos en Allianz',
+      image: 'assets/speakers-2026/irene.jpeg',
+      bio: "Business development y analista y científica de datos en Allianz, cuenta con un perfil híbrido con formación en Marketing e Ingeniería Telemática, especializada en conectar la innovación tecnológica con el valor de negocio. En Telefónica Open Gateway, ha impulsado el desarrollo de negocio y las relaciones con desarrolladores mediante el soporte técnico en APIs y la creación de casos de uso estratégicos. Como Women Techmakers Ambassador y líder de comunidades de Google, ha sido reconocida como mejor líder de comunidad de Europa (2020, 2021), destacando por la organización de eventos masivos como el AI Fest y el diseño de programas de mentoría de alto impacto."
     },
-    { 
-      name: 'Albert Solana', 
-      position: 'co-founder Mindsight Ventures', 
-      image: 'assets/speakers-2025/albert.jpeg',
-      bio: "Albert Solana és technology leader i AI strategist, cofundador de Mindsight Ventures i AI Advisor del venture builder. Amb una expertesa en sistemes d'IA de múltiples agents i una sòlida formació en enginyeria quàntica i ciència de dades, impulsa solucions innovadores en l'optimització empresarial basada en IA i en tecnologia sostenible. L'Albert ha contribuït a projectes avançats en computació quàntica i transformació digital, aprofitant la seva experiència al MIT i en prestigioses empreses tecnològiques globals."
+    {
+      name: 'Francisco Barbeito',
+      position: 'Technical account Manager en Google',
+      image: 'assets/speakers-2026/francisco.png',
+      bio: "Actualmente en Google Cloud, ejerce como asesor técnico de confianza para clientes estratégicos de EMEA, conectando la arquitectura técnica con el valor de negocio en procesos de transformación digital. Especializado en CloudAI y GenAI durante los últimos dos años, tiene un máster y un grado en Informática, además de las certificaciones PCA y PDE. Sus orígenes como desarrollador autónomo le han aportado una mentalidad orientada al cliente que aplica hoy en el ámbito corporativo."
     },
-    { 
-      name: 'Ana Palacios', 
-      position: 'Quantum Software Engineer en Qilimanjaro Quantum Tech', 
-      image: 'assets/speakers-2025/palacios.png',
-      bio: "Ana Palacios estudió Física en la Universidad Complutense de Madrid. Acabó la carrera enamorada de la cuántica pero con curiosidad por profundizar en transiciones de fase, teoría de la información y en computación, por lo que realizó el máster en Física de los Sistemas Complejos del Instituto de Física Interdisciplinar y de los Sistemas Complejos (IFISC) y la Universidad de las Islas Baleares (UIB). Actualmente está haciendo un doctorado industrial con Qilimanjaro en la Universidad de Barcelona sobre el modelo analógico de computación cuántica, desarrollando tanto la teoría fundamental como aplicaciones dentro de este paradigma."
-    },
-    { 
-      name: 'Santiago Barro Caules', 
-      position: 'Fundador y Gerente de Binary Menorca S.L.', 
-      image: 'assets/speakers-2025/tiago.jpg',
-      bio: "Sóc Ingenier Tècnic en Informàtica de Sistemes i emprenedor. Vaig fundar Binary Menorca, empresa que dirigeixo actualment. Participo activament en el sector tecnològic balear formant part del Comitè Executiu de Turistec i havent presidit ACCESO. A més, col·laboro amb es Diari Menorca divulgant la tecnologia.  Al llarg de la meva carrera he rebut diversos premis, com ara: Millor Producte d'Innovació Tecnològica Balear 2007 (Govern Balear), Millor Empresa Jove 2007 (PIME), Millor Jove Empresari Menorca 2009 (Joves Empresaris). Vaig ser finalista del Concurs Nacional 'The Cloud Master' 2011 (Microsoft) i del premi Dircom Ramón del Corral 2023 (Dircom). Apassionat per la IA,  estic cursant un Màster en aquest camp a Founderz." 
+    {
+      name: 'Julia Hernández',
+      position: 'AI Customer Engineer en Google Cloud',
+      image: 'assets/speakers-2026/julia.jpeg',
+      bio: "AI Customer Engineer en Google Cloud, donde ayuda a empresas españolas a crecer en este ecosistema, es graduada Cum Laude en Matemáticas Aplicadas por la UCLA y tiene un máster en Big Data y Machine Learning por la Universidad Pontificia Comillas. Exfutbolista profesional, compaginó sus estudios en Estados Unidos compitiendo en la élite universitaria (NCAA Division-1) con el equipo de fútbol femenino de la universidad."
     },
   ];
 

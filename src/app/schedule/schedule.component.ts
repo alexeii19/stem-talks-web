@@ -56,9 +56,9 @@ export class ScheduleComponent implements OnInit {
       talks: [
         {
           time: '17:00',
-          title: 'Bienvenida a STEM Talks 2025',
-          summary: 'Bienvenida de los organizadores y presentación de la conferencia STEM Talks 2025',
-        },{
+          title: 'Bienvenida a STEM Talks 2026',
+          summary: 'Bienvenida de los organizadores y presentación de la conferencia STEM Talks 2026',
+        }, {
           time: '17:15',
           title: 'Per què vull un ordinador quàntic?',
           speaker: 'Alex Alemany',
@@ -167,7 +167,7 @@ export class ScheduleComponent implements OnInit {
           title: 'Talk especial: TBA',
           speaker: 'Speaker: TBA',
           summary: '¡Solo podemos decirte que el final te va a encantar!',
-        },{
+        }, {
           time: '20:15',
           title: 'Nos vemos en el STEM Talks 2026',
           summary: 'Cierre de la jornada y agradecimiento a los organizadores y colaboradores. Se ofrecerá una sesión de networking para que los asistentes puedan conocerse y hablar sobre sus intereses y proyectos.',
