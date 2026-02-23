@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="ticket-button-container">
-      <a href="https://www.eventbrite.es/e/entradas-stem-talks-menorca-2025-1105345360729?aff=oddtdtcreator" target="_blank" class="ticket-button">
+      <a href="https://gdg.community.dev/events/details/google-gdg-menorca-presents-stem-talks-menorca-2026/" target="_blank" class="ticket-button">
         ¡SOLICITA TU ENTRADA GRATUITA PARA ENTRAR EN EL SORTEO DE PRODUCTOS DE GOOGLE!
       </a>
     </div>
   `,
   styleUrls: ['./boton-entradas.component.css']
 })
-export class BotonEntradasComponent {} 
+export class BotonEntradasComponent { } 

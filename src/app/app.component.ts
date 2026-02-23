@@ -21,7 +21,7 @@ import { FooterComponent } from './footer/footer.component';
       <h1 class="typing-text">{{ displayText }} Talks Menorca 2026</h1>
       <!-- Event details with fade-in effect -->
       <div *ngIf="showEventDetails" class="event-details">
-        <p>30 y 31 de Enero</p>
+        <p>20 y 21 de Marzo</p>
         <p>Centre Bit Menorca</p>
       </div>
 
