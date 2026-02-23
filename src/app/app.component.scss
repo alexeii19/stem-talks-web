@@ -4,54 +4,60 @@ $layer: 20;
 
 /* Center the entire content on the screen */
 .fullscreen {
-    margin-top: 57px; /* Adjust for navbar height to avoid overlap with content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Changed from height to min-height to allow scroll */
-    flex-direction: column;
-    position: relative;
-    color: #fff;
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    z-index: 2; /* Make sure this is above the background animation */
+  margin-top: 57px;
+  /* Adjust for navbar height to avoid overlap with content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Changed from height to min-height to allow scroll */
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  z-index: 2;
+  /* Make sure this is above the background animation */
 }
 
 /* Styling for the typing text (title) */
 .typing-text {
-    font-size: 3.5rem;
-    font-weight: lighter;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid #fff;
-    padding-right: 5px;
-    animation: blink 0.7s step-end infinite;
-    z-index: 3; /* Ensure it's above the animation */
+  font-size: 3.5rem;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  padding-right: 5px;
+  animation: blink 0.7s step-end infinite;
+  z-index: 3;
+  /* Ensure it's above the animation */
 }
 
 /* Event details positioned below the title without affecting its position */
 .event-details {
-    position: absolute;
-    top: 53.5%; /* Adjust as needed to position below the title */
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-    font-size: 1.5rem;
-    z-index: 2; /* This should also be above the background */
+  position: absolute;
+  top: 53.5%;
+  /* Adjust as needed to position below the title */
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  font-size: 1.5rem;
+  z-index: 2;
+  /* This should also be above the background */
 }
 
 /* Blinking cursor animation for the title */
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* Fade-in animation for event details */
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -70,14 +76,16 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - 15px); /* Subtract the extra 15px causing the overflow */
+  width: calc(100vw - 15px);
+  /* Subtract the extra 15px causing the overflow */
   height: 100vh;
   display: grid;
   grid-template-rows: repeat(20, 5vh);
   grid-template-columns: repeat(20, 5vw);
   transform-style: preserve-3d;
   z-index: 1;
-  overflow: hidden; /* Prevent overflow */
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 
@@ -90,11 +98,12 @@ body {
   height: 100%;
   pointer-events: none;
   transform-style: preserve-3d;
-  z-index: 1; /* Same z-index as .container to keep them together */
+  z-index: 1;
+  /* Same z-index as .container to keep them together */
 }
 
 .trigger {
-  &:active ~ .monitor {
+  &:active~.monitor {
     .vr_layer_item {
       width: 40%;
       height: 40%;
@@ -104,28 +113,30 @@ body {
 
   @for $i from 1 through 20 {
     @for $j from 1 through 20 {
-      $key: ($i - 1) * 20 + $j;
+      $key: (
+        $i - 1) * 20 + $j;
 
       &:nth-child(#{$key}) {
-        &:hover ~ .monitor {
+        &:hover~.monitor {
           .camera {
             &.o-y {
-              transform: rotateY(($j - 10) * -8deg);
-            }
-            
-            &.o-x {
-              transform: rotateX(($i - 10) * 8deg);
-            }
+              transform: rotateY(($j - 10) * -8deg
+              );
+          }
+
+          &.o-x {
+            transform: rotateX(($i - 10) * 8deg);
           }
         }
-        
-        // Apply narrower width to last column items
-        @if $j == 20 {
-          width: 90%; // Adjust this value as needed
-        }
+      }
+
+      // Apply narrower width to last column items
+      @if $j ==20 {
+        width: 90%; // Adjust this value as needed
       }
     }
   }
+}
 }
 
 
@@ -138,7 +149,7 @@ body {
   height: 100%;
   transform-style: preserve-3d;
   transition: 500ms;
-  
+
   &.o-y {
     transform: rotateY(-30deg);
   }
@@ -170,12 +181,12 @@ body {
       &:nth-child(#{$i}) {
         transform: translateZ(calc($i * $size / $layer) - calc($size / 2));
       }
-      
+
       &:nth-child(#{$i}) &_item {
         animation-delay: $i * -210ms;
       }
     }
-    
+
     &_item {
       width: 70%;
       height: 70%;
@@ -218,11 +229,11 @@ body {
   0% {
     transform: scale(0) rotateZ(45deg);
   }
-  
+
   50% {
     transform: scale(0) rotateZ(45deg);
   }
-  
+
   100% {
     transform: scale(1) rotateZ(45deg);
   }
@@ -232,11 +243,11 @@ body {
   0% {
     border-color: #f55;
   }
-  
+
   50% {
     border-color: #55f;
   }
-  
+
   100% {
     border-color: #5f5;
   }
@@ -244,3 +255,36 @@ body {
 
 $size: 350px;
 $layer: 20;
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .fullscreen {
+    margin-top: 50px;
+    padding: 1rem;
+  }
+
+  .typing-text {
+    font-size: 1.6rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    padding-right: 0;
+  }
+
+  .event-details {
+    position: relative;
+    top: auto;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .container {
+    grid-template-rows: repeat(10, 10vh);
+    grid-template-columns: repeat(10, 10vw);
+  }
+
+  .vr {
+    width: 200px;
+    height: 200px;
+  }
+}

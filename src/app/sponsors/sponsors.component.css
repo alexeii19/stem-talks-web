@@ -17,11 +17,13 @@
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #2c3e50; /* Dark color for the headings */
+    color: #2c3e50;
+    /* Dark color for the headings */
 }
 
 /* Flexbox container for images (Coorganizadores and Sponsors) */
-.coorganizadores, .sponsors {
+.coorganizadores,
+.sponsors {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -82,16 +84,20 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;  /* Reduced gap between text and PDF */
-    margin: 3rem 2rem; /* Adjusted margins for better balance */
+    gap: 2rem;
+    /* Reduced gap between text and PDF */
+    margin: 3rem 2rem;
+    /* Adjusted margins for better balance */
 }
 
 /* Styling for text section */
 .text-left {
-    width: 50%;  /* Adjusted width for better balance */
+    width: 50%;
+    /* Adjusted width for better balance */
     text-align: left;
     color: white;
-    background-color: #3f8159; /* Dark green background */
+    background-color: #3f8159;
+    /* Dark green background */
     padding: 1.5rem;
     border-radius: 8px;
 }
@@ -109,14 +115,17 @@ h2 {
 
 /* Styling for the PDF section */
 .pdf-right {
-    width: 40%;  /* Adjusted width for better balance */
-    height: 440px; /* Fixed height for better visibility */
+    width: 40%;
+    /* Adjusted width for better balance */
+    height: 440px;
+    /* Fixed height for better visibility */
     overflow: hidden;
 }
 
 .pdf-right embed {
     width: 100%;
-    height: 100%;  /* Ensure PDF fills container */
+    height: 100%;
+    /* Ensure PDF fills container */
     border-radius: 8px;
 }
 
@@ -135,6 +144,32 @@ h2 {
 
     /* Make PDF height larger on smaller screens for better view */
     .pdf-right {
-        height: 800px;
+        height: 400px;
+    }
+
+    .sponsor-large-pic {
+        width: 100%;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    .sponsor-mid-pic {
+        width: 100%;
+        max-width: 60vw;
+        height: auto;
+    }
+
+    .sponsor-small-pic {
+        width: 100%;
+        max-width: 30vw;
+        height: auto;
+    }
+
+    .sponsors-container {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
     }
 }

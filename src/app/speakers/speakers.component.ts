@@ -53,6 +53,12 @@ export class SpeakersComponent {
       image: 'assets/speakers-2026/julia.jpeg',
       bio: "AI Customer Engineer en Google Cloud, donde ayuda a empresas españolas a crecer en este ecosistema, es graduada Cum Laude en Matemáticas Aplicadas por la UCLA y tiene un máster en Big Data y Machine Learning por la Universidad Pontificia Comillas. Exfutbolista profesional, compaginó sus estudios en Estados Unidos compitiendo en la élite universitaria (NCAA Division-1) con el equipo de fútbol femenino de la universidad."
     },
+    {
+      name: 'Alejandro Rios',
+      position: 'Profesor en el departamento de computación de la Universitat Politècnica de Catalunya',
+      image: 'assets/speakers-2026/alejandro.jpeg',
+      bio: ""
+    },
   ];
 
   selectedSpeaker: any = null;
