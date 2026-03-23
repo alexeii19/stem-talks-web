@@ -16,7 +16,7 @@ export class FaqComponent {
   faqs = [
     {
       question: "¿A quién va dirigido este evento?",
-      answer: "El DevFest es un evento para todos aquellos que estén interesados en tecnología. Queremos que sea un espacio de innovación y conexión. La mayoría de perfiles que acuden al evento son profesionales y empresas de software y tecnología, estudiantes y aficionados. Si te interesa, os invitamos a pasar dos días donde descubrirás el increible mundo de las STEM"
+      answer: "STEM Talks Menorca es un evento para todos aquellos que estén interesados en ciencia y tecnología. Queremos que sea un espacio de innovación y conexión. La mayoría de perfiles que acuden al evento son profesionales y empresas de software y tecnología, estudiantes y aficionados. Si te interesa, os invitamos a pasar dos días donde descubrirás el increible mundo de las STEM"
     },
     {
       question: "¿Puedo atender a todas las actividades?",
@@ -27,7 +27,7 @@ export class FaqComponent {
       answer: "Nuestros eventos son 100% gratuitos. Creemos que el conocimiento no puede tener barreras y para divulgar sobre ciencia y tecnología y llegar a todo el mundo que le pueda interesar no es compatible con cobrar entrada. Queremos crear comunidad y aprender juntos, nada más :)"
     },
     {
-      question: "¿Como puedo estar al día de las noticias del DevFest?",
+      question: "¿Como puedo estar al día de las noticias del STEM Talks Menorca?",
       answer: "Puedes seguir todas las novedades del evento por <a href='https://x.com/GDGMenorca/' target='_blank'>nuestro X</a> o <a href='https://www.instagram.com/gdgmenorca/' target='_blank'>nuestro instagram</a>. Te recomendamos reservar tu entrada para que podamos ponernos en contacto contigo más fácilmente."
     },
     {
@@ -38,7 +38,7 @@ export class FaqComponent {
 
   isOpen: boolean[] = [];
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer) { }
 
   toggleAnswer(index: number): void {
     this.isOpen[index] = !this.isOpen[index];

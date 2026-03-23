@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="ticket-button-container">
       <a href="https://gdg.community.dev/events/details/google-gdg-menorca-presents-stem-talks-menorca-2026/" target="_blank" class="ticket-button">
-        ¡SOLICITA TU ENTRADA GRATUITA PARA ENTRAR EN EL SORTEO DE PRODUCTOS DE GOOGLE!
+        ¡No esperes más y reserva tu entrada!
       </a>
     </div>
   `,

@@ -33,9 +33,9 @@ h2 {
 }
 
 /* Styling for the sponsor images (uniform size and spacing) */
-.sponsor-large-pic {
-    width: 400px;
-    height: 400px;
+.sponsor-big-pic {
+    width: 360px;
+    height: 360px;
     border-radius: 8px;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -45,8 +45,8 @@ h2 {
 }
 
 .sponsor-mid-pic {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     border-radius: 8px;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -66,8 +66,19 @@ h2 {
     margin-right: 1rem;
 }
 
+.sponsor-small-wide-pic {
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 /* Hover effect for sponsor images */
-.sponsor-large-pic:hover {
+.sponsor-big-pic:hover {
     transform: scale(1.1);
 }
 
@@ -75,7 +86,8 @@ h2 {
     transform: scale(1.1);
 }
 
-.sponsor-small-pic:hover {
+.sponsor-small-pic:hover,
+.sponsor-small-wide-pic:hover {
     transform: scale(1.1);
 }
 
@@ -147,21 +159,27 @@ h2 {
         height: 400px;
     }
 
-    .sponsor-large-pic {
+    .sponsor-big-pic {
         width: 100%;
-        max-width: 80vw;
+        max-width: 75vw;
         height: auto;
     }
 
     .sponsor-mid-pic {
         width: 100%;
-        max-width: 60vw;
+        max-width: 65vw;
         height: auto;
     }
 
     .sponsor-small-pic {
         width: 100%;
         max-width: 30vw;
+        height: auto;
+    }
+
+    .sponsor-small-wide-pic {
+        width: 100%;
+        max-width: 50vw;
         height: auto;
     }
 

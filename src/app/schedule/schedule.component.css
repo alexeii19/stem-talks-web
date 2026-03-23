@@ -30,8 +30,10 @@ h3 {
   border-radius: 5px;
   background-color: #fff;
   width: 100%;
+  box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  gap: 15px;
 }
 
 .dropdown-toggle:hover {
@@ -45,7 +47,6 @@ h3 {
   padding: 10px;
   border-radius: 5px;
   font-size: 1.2rem;
-  margin-right: 15px; /* Space between time box and talk info */
   flex-shrink: 0; /* Prevent time box from shrinking */
   width: 100px;  /* Fixed width for time box */
   text-align: center;
@@ -56,6 +57,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .talk-title {
@@ -63,12 +67,20 @@ h3 {
   font-weight: bold;
   color: #333;
   text-align: left; /* Ensure title is aligned to the left */
+  /* Prevent overflow */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .speaker-name {
   font-size: 1.3rem;
   color: #666;
   text-align: left; /* Ensure speaker's name is aligned to the left */
+  /* Prevent overflow */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Dropdown summary styles */
@@ -90,4 +102,52 @@ h3 {
   margin: 10px 50px;
   font-size: 18px;
   color: #333;
+  white-space: pre-line;
+}
+
+/* Registration Button inside Dropdown */
+.registration-btn {
+  display: inline-block;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #3082b9; /* Match time box color */
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0; /* Prevent the button from getting squished */
+}
+
+.registration-btn:hover {
+  background-color: #24638d; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dropdown-toggle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .time-box {
+    width: auto;
+    padding: 5px 10px;
+  }
+
+  .talk-title, .speaker-name {
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .registration-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }

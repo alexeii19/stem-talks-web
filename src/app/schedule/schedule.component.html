@@ -8,13 +8,14 @@
   
       <div *ngFor="let talk of day.talks; let i = index">
         <div class="dropdown">
-          <button class="dropdown-toggle" (click)="toggleSummary(dayIndex, i)">
+          <div class="dropdown-toggle" (click)="toggleSummary(dayIndex, i)">
             <div class="time-box">{{ talk.time }}</div>
             <div class="talk-info">
               <div class="talk-title">{{ talk.title }}</div>
               <div class="speaker-name">{{ talk.speaker }}</div>
             </div>
-          </button>
+            <a *ngIf="talk.registrationLink" [href]="talk.registrationLink" target="_blank" class="registration-btn" (click)="$event.stopPropagation()">Registrarse al taller</a>
+          </div>
   
           <!-- Dropdown Summary Section -->
           <div class="dropdown-summary" [class.open]="day.isOpen[i]">

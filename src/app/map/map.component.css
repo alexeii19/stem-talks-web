@@ -7,7 +7,9 @@
 /* Main container: Set up two columns with no margin/padding */
 .map-container {
   display: flex;
-  height: 100vh;  /* Ensure the map takes full height of the screen */
+  flex-direction: row;
+  align-items: stretch; /* Force both columns to be equal height */
+  min-height: 100vh;  /* Ensure the map takes full height, but can grow if needed */
   width: 100%;
 }
 
@@ -19,12 +21,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 40px;
   background-image: url('../../assets/back.jpeg');
   background-size: cover; /* Ensures the image covers the whole area */
   background-position: center center; /* Centers the background image */
-  height: 100%; /* Makes the background cover the whole viewport */
   position: relative; /* To position the overlay and content correctly */
+  min-height: 50vh; /* Give it a reasonable minimum in desktop too */
 }
 
 /* Dark overlay */
@@ -50,6 +52,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Building address styling */
@@ -61,8 +64,8 @@
 /* Right column: Google map */
 .right-column {
   flex: 1;
-  height: 100%;
   padding: 0;
+  display: flex; /* Make it a flex container so iframe can fill it easily */
 }
 
 iframe {
@@ -75,16 +78,28 @@ iframe {
 @media (max-width: 768px) {
   .map-container {
       flex-direction: column;  /* Stack columns vertically on small screens */
+      height: auto; /* Let the container grow based on content */
   }
 
-  .left-column, .right-column {
+  .left-column {
       flex: none;
       width: 100%;  /* Take full width when stacked */
-      height: 50vh;  /* Half the screen height for each section */
+      height: 65vh; /* Larger fixed size to fit content without being too big */
+      min-height: 65vh;
+      padding: 40px 20px; /* Generous padding top and bottom */
+      box-sizing: border-box;
+      justify-content: center; /* Center everything vertically and horizontally now that there's plenty of space */
   }
-
-  iframe {
-      height: 50vh;  /* Adjust map height on small screens */
+  
+  .building-title {
+      font-size: 1.5rem; /* Make the title slightly smaller on mobile */
+      margin-top: 20px;
+  }
+  
+  .right-column, iframe {
+      flex: none;
+      width: 100%;
+      height: 50vh;  /* Map can stay at 50vh or a fixed size */
   }
 }
 
